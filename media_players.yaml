@@ -1,0 +1,9 @@
+- platform: kodi
+  name: Living Room OSMC
+  host: !secret kodi_livingroom_ip
+  port: 8080
+  
+- platform: kodi
+  name: Basement Kodi
+  host: !secret kodi_basement_ip
+  port: 80

@@ -1,0 +1,21 @@
+- platform: mqtt
+  name: "Living Room Ceiling Fan"
+  state_topic: "smartthings/Living Room Ceiling Fan/switch"
+  command_topic: "smartthings/Living Room Ceiling Fan/switch"
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
+- platform: mqtt
+  name: "Living Room Light"
+  state_topic: "smartthings/Living Room Light/switch"
+  command_topic: "smartthings/Living Room Light/switch"
+  brightness_state_topic: "smartthings/Living Room Light/level"
+  brightness_command_topic: "smartthings/Living Room Light/level"
+  brightness_scale: 99
+  brightness_value_template: '{{ value }}'
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  optimistic: false
+  retain: true

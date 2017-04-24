@@ -1,0 +1,28 @@
+ZWave:
+  name: Z-Wave
+  view: yes
+  entities:
+    - group.multisensor
+    - group.livingroom
+    - group.master
+
+multisensor:
+  name: Multi-Sensor
+  view: no
+  entities:
+    - sensor.zwave_multisensor_temp
+    - sensor.zwave_multisensor_humidity
+    - sensor.zwave_multisensor_battery_level
+
+livingroom:
+  name: Living Room
+  view: no
+  entities:
+    - switch.living_room_ceiling_fan
+    - switch.living_room_light
+
+master:
+  name: Master Bedroom
+  view: no
+  entities:
+    - switch.master_light

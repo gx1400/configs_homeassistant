@@ -1,0 +1,6 @@
+Kodi:
+  name: Kodi
+  view: yes
+  entities:
+    - media_player.kodi
+    - media_player.kodi_2

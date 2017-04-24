@@ -1,0 +1,17 @@
+- platform: mqtt
+  name: "Z-wave Multisensor Humidity"
+  state_topic: "smartthings/Multisensor/humidity"
+  qos: 0
+  unit_of_measurement: "%"
+  
+- platform: mqtt
+  name: "Z-wave Multisensor Temp"
+  state_topic: "smartthings/Multisensor/temperature"
+  qos: 0
+  unit_of_measurement: "°F"
+
+- platform: mqtt
+  name: "Z-wave Multisensor Battery Level"
+  state_topic: "smartthings/Multisensor/battery"
+  qos: 0
+  unit_of_measurement: "%"

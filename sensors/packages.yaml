@@ -1,0 +1,14 @@
+#- platform: fedex
+#  name: Fedex
+#  username: !secret fedex_username
+#  password: !secret fedex_password
+    
+- platform: ups
+  name: UPS
+  username: !secret ups_username
+  password: !secret ups_password
+    
+- platform: usps
+  name: USPS
+  username: !secret usps_username
+  password: !secret usps_password

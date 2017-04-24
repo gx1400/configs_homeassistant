@@ -1,0 +1,10 @@
+tts/
+deps/
+*.pickle
+secrets.yaml
+nest.conf
+known_devices.yaml
+*.db
+*.log
+.uuid
+.HA_VERSION

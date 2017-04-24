@@ -1,0 +1,42 @@
+- platform: synologydsm
+  host: !secret synologydsm_IP
+  username: !secret synologydsm_username
+  password: !secret synologydsm_password
+  monitored_conditions:
+    - cpu_total_load
+    - memory_real_usage
+    - network_up
+    - network_down
+    - volume_percentage_used
+
+- platform: nzbget
+  host: !secret nzbget_IP
+  port: !secret nzbget_port
+  username: !secret nzbget_username
+  password: !secret nzbget_password
+  monitored_variables:
+    - average_download_rate
+    - download_rate
+    - article_cache
+    - post_paused
+    - remaining_size
+    - uptime
+
+- platform: sonarr
+  api_key: !secret sonarr_apikey
+  host: !secret sonarr_IP
+  port: !secret sonarr_port
+  days: 7
+  monitored_conditions:
+    - series
+    - upcoming
+    - wanted
+    - queue
+    - commands
+      
+- platform: pi_hole
+  host: !secret pihole_IP
+  monitored_conditions:
+    - dns_queries_today
+    - ads_blocked_today
+    - ads_percentage_today

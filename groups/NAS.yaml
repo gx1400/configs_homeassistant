@@ -1,0 +1,47 @@
+NAS:
+  name: NAS
+  view: yes
+  entities: 
+    - group.synology
+    - group.nzbget
+    - group.sonarr
+    - group.pihole
+
+synology:
+  name: Synology DSM
+  view: no
+  entities:
+    - sensor.cpu_load_total
+    - sensor.memory_usage_real
+    - sensor.network_down
+    - sensor.network_up
+    - sensor.volume_used_volume_1
+
+nzbget:
+  name: NZBGet
+  view: no
+  entities:
+    - sensor.nzbget_article_cache
+    - sensor.nzbget_average_speed
+    - sensor.nzbget_post_processing_paused
+    - sensor.nzbget_queue_size
+    - sensor.nzbget_speed
+    - sensor.nzbget_uptime
+
+sonarr:
+  name: Sonarr
+  view: no
+  entities:
+    - sensor.sonarr_series
+    - sensor.sonarr_upcoming
+    - sensor.sonarr_wanted
+    - sensor.sonarr_queue
+    - sensor.sonarr_commands
+
+pihole:
+  name: Pi-Hole DNS Server
+  view: no
+  entities:
+  - sensor.pihole_dns_queries_today
+  - sensor.pihole_ads_blocked_today
+  - sensor.pihole_ads_percentage_blocked_today
