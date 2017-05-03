@@ -6,6 +6,8 @@ default_view:
     - group.Travel
     - group.Packages
     - group.Pocketcasts
+    - group.Temperatures
+    - group.Humidities
 
 time:
   name: Time & Date
@@ -26,6 +28,26 @@ weather:
     - sensor.dark_sky_temperature
     - sensor.dark_sky_wind_speed
     - sun.sun
+
+Temperatures:
+  name: Home Temperatures
+  view: no
+  entities:
+    - sensor.living_room_temp
+    - sensor.garage_temp
+    - sensor.master_bedroom_temp
+    - sensor.office_temp
+    - sensor.basement_temp
+
+Humidities:
+  name: Home Humidities
+  view: no
+  entities:
+    - sensor.living_room_humidity
+    - sensor.garage_humidity
+    - sensor.master_bedroom_humidity
+    - sensor.office_humidity
+    - sensor.basement_humidity
 
 Travel:
   name: Travel

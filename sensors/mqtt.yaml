@@ -15,3 +15,74 @@
   state_topic: "smartthings/Multisensor/battery"
   qos: 0
   unit_of_measurement: "%"
+  
+- platform: mqtt
+  name: "Living Room Temp"
+  state_topic: "home/livingroom/temp"
+  qos: 0
+  unit_of_measurement: "°F"
+  expire_after: 600
+  
+- platform: mqtt
+  name: "Living Room Humidity"
+  state_topic: "home/livingroom/humidity"
+  qos: 0
+  unit_of_measurement: "%"
+  expire_after: 600
+
+- platform: mqtt
+  name: "Master Bedroom Temp"
+  state_topic: "home/master/temp"
+  qos: 0
+  unit_of_measurement: "°F"
+  expire_after: 600
+  
+- platform: mqtt
+  name: "Master Bedroom Humidity"
+  state_topic: "home/master/humidity"
+  qos: 0
+  unit_of_measurement: "%"
+  expire_after: 600
+  
+- platform: mqtt
+  name: "Office Temp"
+  state_topic: "home/office/temp"
+  qos: 0
+  unit_of_measurement: "°F"
+  expire_after: 600
+  
+- platform: mqtt
+  name: "Office Humidity"
+  state_topic: "home/office/humidity"
+  qos: 0
+  unit_of_measurement: "%"
+  expire_after: 600
+
+- platform: mqtt
+  name: "Basement Temp"
+  state_topic: "home/basement/temp"
+  qos: 0
+  unit_of_measurement: "°F"
+  expire_after: 600
+
+- platform: mqtt
+  name: "Basement Humidity"
+  state_topic: "home/basement/humidity"
+  qos: 0
+  unit_of_measurement: "%"
+  expire_after: 600
+
+- platform: mqtt
+  name: "Garage Temp"
+  state_topic: "home/garage/temp"
+  qos: 0
+  unit_of_measurement: "°F"
+  expire_after: 600
+  
+- platform: mqtt
+  name: "Garage Humidity"
+  state_topic: "home/garage/humidity"
+  qos: 0
+  unit_of_measurement: "%"
+  expire_after: 600
+  
